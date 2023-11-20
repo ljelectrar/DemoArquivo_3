@@ -52,7 +52,7 @@ public class Main {
 
         String path = "C:\\Users\\ljele\\IdeaProjects\\out.txt";
 
-        try (BufferedWriter bw = new BufferedWriter(new FileWriter(path))){
+        try (BufferedWriter bw = new BufferedWriter(new FileWriter(path, true))){
             for (String linha : alunos) {
                 bw.write(linha + ", ");
             }
